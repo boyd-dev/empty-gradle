@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = '21'
+}
+
+
+
+dependencies {
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.3'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	      
+    
+}
+
+
+test {
+    useJUnitPlatform()
+    testLogging.showStandardStreams=true
+   
+}
+
+application {
+    mainClass = 'com.foo.example.HelloWorld'
+}
+
+jar {
+
+    manifest { 
+        attributes( 
+            'Main-Class': 'com.foo.HelloWorld',
+            'App-Name': 'demo',
+            'Version': 1.0,
+        ) 
+    } 
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+
+} 
