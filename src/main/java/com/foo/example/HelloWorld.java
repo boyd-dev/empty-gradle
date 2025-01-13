@@ -10,15 +10,13 @@ public class HelloWorld {
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss:SSSSSS");
 		System.out.println("Hello, World! " + dtf.format(now));
-	}
-	
+	}	
 	
 	public String hello() {
 		
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss:SSSSSS");
-		return "Hello, World! " + dtf.format(now);
-		
+		return "Hello, World! " + dtf.format(now);		
 	}	
 
 }
