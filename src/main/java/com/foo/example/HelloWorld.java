@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class HelloWorld {
 
-	public static void main(String ...args) {
+	public static void main(String ...args) { // varargs as of JAVA 5
 		
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss:SSSSSS");
