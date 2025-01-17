@@ -20,7 +20,6 @@ class MyTest {
         
         String dateTimePart = result.substring(14);
         System.out.println(dateTimePart);
-
 	}
 	
 }
