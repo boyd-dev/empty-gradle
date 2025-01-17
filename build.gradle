@@ -38,7 +38,7 @@ jar {
         attributes( 
             'Main-Class': 'com.foo.example.HelloWorld',
             'App-Name': 'demo',
-            'Version': 0.1,
+            'Version': 0.0.1,
         ) 
     } 
     from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
