@@ -9,7 +9,7 @@ public class MySha256 {
 
 	public static void main(String[] args) {
 		
-		String str = "Alice gave 0.015BTC to EDIYA";
+		String str = "Alice gave 0.015BTC to James.";
 		
 		try {
 			
